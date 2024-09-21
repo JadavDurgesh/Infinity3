@@ -1790,6 +1790,7 @@ body.rounded-btns .read-more {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: red;
 }
 .header-basic .header-logo .logo-img {
   display: block;
