@@ -1331,7 +1331,7 @@ body.rounded-btns .read-more {
   border: none;
   color: var(--clr-white);
   background: rgba(var(--clr-white-rgb), 0.35);
-  backdrop-filter: blur(4px);
+  backdrop-filter:blur(4px);
   margin-bottom: 0;
 }
 .field-group input[type=email]::-webkit-input-placeholder,
@@ -1797,6 +1797,10 @@ body.rounded-btns .read-more {
 }
 .header-basic .header-logo .logo-img {
   display: block;
+
+  max-width: 7rem;
+  /* max-height: calc(90px - 10px); */
+
   max-width: 100%;
   max-height: 100%;
   transition: all 0.5s ease-in-out 0s;
