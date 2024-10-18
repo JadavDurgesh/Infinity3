@@ -396,7 +396,7 @@ submitBtn.on("click", function (e) {
         // Hide message after 3 seconds
         setTimeout(function () {
           $(".done-msg").text("").toggleClass("show");
-        }, 3000);
+        }, 1500);
 
         // Reset form
         contactForm[0].reset();
