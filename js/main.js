@@ -312,73 +312,102 @@ $(function () {
   });
 
   /*************Start Contact Form Functionality************/
-
   const contactForm = $("#contact-us-form"),
-    userName = $("#user-name"),
-    userEmail = $("#user-email"),
-    msgSubject = $("#msg-subject"),
-    msgText = $("#msg-text"),
-    submitBtn = $("#submit-btn");
+  userName = $("#user-name"),
+  userEmail = $("#user-email"),
+  msgSubject = $("#msg-subject"),
+  msgText = $("#msg-text"),
+  submitBtn = $("#submit-btn");
 
-  let isValidInput = false,
-    isValidEmail = false;
+let isValidInput = false,
+  isValidEmail = false;
 
-  function ValidateNotEmptyInput(input, errMsg) {
-    if (input.length) {
-      if (input.val().trim() === "") {
-        $(input).siblings(".error-msg").text(errMsg).css("display", "block");
-        isValidInput = false;
-      } else {
-        $(input).siblings(".error-msg").text("").css("display", "none");
-        isValidInput = true;
-      }
-    }
-  }
-
-  function validateEmailInput(emailInput) {
-    let pattern =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    if (pattern.test(emailInput.val()) === false) {
-      $(emailInput)
-        .siblings(".error-msg")
-        .text("Please Enter a valid Email")
-        .css("display", "block");
-      isValidEmail = false;
+// Function to validate input fields
+function ValidateNotEmptyInput(input, errMsg) {
+  if (input.length) {
+    if (input.val().trim() === "") {
+      $(input).siblings(".error-msg").text(errMsg).css("display", "block");
+      isValidInput = false;
     } else {
-      $(emailInput).siblings(".error-msg").text("").css("display", "none");
-      isValidEmail = true;
+      $(input).siblings(".error-msg").text("").css("display", "none");
+      isValidInput = true;
     }
   }
+}
 
-  submitBtn.on("click", function (e) {
-    e.preventDefault();
+// Function to validate email input
+function validateEmailInput(emailInput) {
+  let pattern =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    ValidateNotEmptyInput(userName, "Please Enter Your Name");
-    ValidateNotEmptyInput(userEmail, "Please Enter Your Email");
-    ValidateNotEmptyInput(msgSubject, "Please Enter Your subject");
-    ValidateNotEmptyInput(msgText, "Please Enter Your Message");
-    validateEmailInput(userEmail);
+  if (!pattern.test(emailInput.val())) {
+    $(emailInput)
+      .siblings(".error-msg")
+      .text("Please Enter a valid Email")
+      .css("display", "block");
+    isValidEmail = false;
+  } else {
+    $(emailInput).siblings(".error-msg").text("").css("display", "none");
+    isValidEmail = true;
+  }
+}
 
-    if (isValidInput && isValidEmail) {
-      $.ajax({
-        type: "POST",
-        url: contactForm.attr("action"),
-        data: contactForm.serialize(),
+// Event listener for form submission
+submitBtn.on("click", function (e) {
+  e.preventDefault();
 
-        success: function (data) {
-          $(".done-msg")
-            .text("Thank you, Your Message Was Received!")
-            .toggleClass("show");
-          setTimeout(function () {
-            $(".done-msg").text("").toggleClass("show");
-          }, 3000);
-          contactForm[0].reset();
-        },
+  // Validate all fields
+  ValidateNotEmptyInput(userName, "Please Enter Your Name");
+  ValidateNotEmptyInput(userEmail, "Please Enter Your Email");
+  ValidateNotEmptyInput(msgSubject, "Please Enter Your Subject");
+  ValidateNotEmptyInput(msgText, "Please Enter Your Message");
+  validateEmailInput(userEmail);
+
+  // Proceed if all validations are successful
+  if (isValidInput && isValidEmail) {
+    const formData = {
+      name: userName.val().trim(),
+      email: userEmail.val().trim(),
+      subject: msgSubject.val().trim(),
+      message: msgText.val().trim(),
+    };
+
+    // Send data via fetch
+    fetch("https://infinity3technology.pythonanywhere.com/get/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Failed to send message.");
+        }
+      })
+      .then((data) => {
+        // Show success message
+        $(".done-msg")
+          .text("Thank you, Your Message Was Received!")
+          .toggleClass("show");
+
+        // Hide message after 3 seconds
+        setTimeout(function () {
+          $(".done-msg").text("").toggleClass("show");
+        }, 3000);
+
+        // Reset form
+        contactForm[0].reset();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again.");
       });
-      return false;
-    }
-  });
+  }
+});
+
 
   /*************End Contact Form Functionality************/
 
