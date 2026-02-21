@@ -220,6 +220,7 @@
     </div>
     <!-- End  internship Section-->
     
+    
     <!-- Start Student Testimonials Section-->
     <section class="testimonials mega-section" id="student-testimonials" style="padding: 4rem 0; background: var(--clr-dark);">
       <div class="container">
@@ -233,104 +234,30 @@
         <!-- End Testimonials Heading -->
 
         <!-- Start Student Testimonials Slider -->
-        <div class="student-testimonials-container wow fadeInUp" data-wow-delay=".4s" style="position: relative; margin-top: 3rem;">
-          <div style="position: relative; display: flex; align-items: center; gap: 1rem;">
+        <div class="student-testimonials-container wow fadeInUp" data-wow-delay=".4s" style="position: relative; margin-top: 3rem; overflow: hidden;">
+          <div style="position: relative; margin: 0 60px;">
             <!-- Left Arrow -->
-            <button class="student-testimonials-prev" style="position: absolute; left: -50px; top: 50%; transform: translateY(-50%); background: var(--clr-main); color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+            <button class="student-testimonials-prev" style="position: absolute; left: -60px; top: 50%; transform: translateY(-50%); background: var(--clr-main); color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
               <i class="bi bi-chevron-left"></i>
             </button>
             
             <!-- Testimonials Slider -->
-            <div class="swiper student-testimonials-slider" style="width: 100%; overflow: hidden;">
+            <div class="swiper student-testimonials-slider" style="width: 100%; overflow: visible;">
               <div class="swiper-wrapper">
-                <!-- Student 1 -->
+                <!-- Students will be loaded dynamically from API -->
                 <div class="swiper-slide">
-                  <div class="student-testimonial-card" data-student-id="1" style="background: var(--clr-dark-blue); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); cursor: pointer; transition: all 0.3s ease; min-height: 350px;">
-                    <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                      <img src="assets/images/testimonials/1.jpg" alt="Student" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--clr-main);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27%3E%3Crect fill=%27%23667eea%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2740%27 fill=%27white%27%3ERK%3C/text%3E%3C/svg%3E'" />
-                      <div>
-                        <h4 style="color: var(--clr-white); margin: 0 0 0.5rem 0; font-size: 1.3rem;">Rahul Kumar</h4>
-                        <p style="color: var(--clr-main); margin: 0; font-size: 0.9rem; font-weight: 600;">PHP Laravel - 3 Months</p>
-                        <p style="color: var(--clr-grey); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Computer Engineering</p>
-                      </div>
-                    </div>
-                    <p style="color: var(--clr-grey); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"The internship program was exceptional! I learned PHP Laravel from scratch and built 3 real-world projects. The mentors were supportive and the hands-on experience boosted my confidence tremendously."</p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                      <span style="background: rgba(102, 126, 234, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">✓ Certified</span>
-                      <span style="background: rgba(102, 126, 234, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">★ 5.0 Rating</span>
-                      <span style="background: rgba(102, 126, 234, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📅 Completed 2025</span>
-                    </div>
-                    <button class="view-details-btn" style="margin-top: 1.5rem; padding: 0.6rem 1.5rem; background: var(--clr-main); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">View Full Details</button>
-                  </div>
-                </div>
-
-                <!-- Student 2 -->
-                <div class="swiper-slide">
-                  <div class="student-testimonial-card" data-student-id="2" style="background: var(--clr-dark-blue); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); cursor: pointer; transition: all 0.3s ease; min-height: 350px;">
-                    <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                      <img src="assets/images/testimonials/2.jpg" alt="Student" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--clr-main);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27%3E%3Crect fill=%27%23f093fb%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2740%27 fill=%27white%27%3EPS%3C/text%3E%3C/svg%3E'" />
-                      <div>
-                        <h4 style="color: var(--clr-white); margin: 0 0 0.5rem 0; font-size: 1.3rem;">Priya Sharma</h4>
-                        <p style="color: var(--clr-main); margin: 0; font-size: 0.9rem; font-weight: 600;">MERN Stack - 6 Months</p>
-                        <p style="color: var(--clr-grey); margin: 0.3rem 0 0 0; font-size: 0.85rem;">MCA</p>
-                      </div>
-                    </div>
-                    <p style="color: var(--clr-grey); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"Best decision I made for my career! The MERN stack program was comprehensive and industry-focused. I built 5 enterprise projects and got placed at a top company with excellent package."</p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                      <span style="background: rgba(240, 147, 251, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">✓ Certified</span>
-                      <span style="background: rgba(240, 147, 251, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">★ 5.0 Rating</span>
-                      <span style="background: rgba(240, 147, 251, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💼 Placed</span>
-                    </div>
-                    <button class="view-details-btn" style="margin-top: 1.5rem; padding: 0.6rem 1.5rem; background: var(--clr-main); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">View Full Details</button>
-                  </div>
-                </div>
-
-                <!-- Student 3 -->
-                <div class="swiper-slide">
-                  <div class="student-testimonial-card" data-student-id="3" style="background: var(--clr-dark-blue); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); cursor: pointer; transition: all 0.3s ease; min-height: 350px;">
-                    <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                      <img src="assets/images/testimonials/3.jpg" alt="Student" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--clr-main);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27%3E%3Crect fill=%27%234facfe%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2740%27 fill=%27white%27%3EAP%3C/text%3E%3C/svg%3E'" />
-                      <div>
-                        <h4 style="color: var(--clr-white); margin: 0 0 0.5rem 0; font-size: 1.3rem;">Amit Patel</h4>
-                        <p style="color: var(--clr-main); margin: 0; font-size: 0.9rem; font-weight: 600;">Python Django - 4 Months</p>
-                        <p style="color: var(--clr-grey); margin: 0.3rem 0 0 0; font-size: 0.85rem;">B.Sc IT</p>
-                      </div>
-                    </div>
-                    <p style="color: var(--clr-grey); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"From basics to advanced concepts, everything was explained perfectly. Built multiple REST APIs and deployed them on cloud. The certificate helped me land my dream job as Python developer."</p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                      <span style="background: rgba(79, 172, 254, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">✓ Certified</span>
-                      <span style="background: rgba(79, 172, 254, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">★ 4.9 Rating</span>
-                      <span style="background: rgba(79, 172, 254, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📅 Completed 2025</span>
-                    </div>
-                    <button class="view-details-btn" style="margin-top: 1.5rem; padding: 0.6rem 1.5rem; background: var(--clr-main); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">View Full Details</button>
-                  </div>
-                </div>
-
-                <!-- Student 4 -->
-                <div class="swiper-slide">
-                  <div class="student-testimonial-card" data-student-id="4" style="background: var(--clr-dark-blue); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); cursor: pointer; transition: all 0.3s ease; min-height: 350px;">
-                    <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                      <img src="assets/images/testimonials/4.jpg" alt="Student" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--clr-main);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27%3E%3Crect fill=%27%2343e97b%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2740%27 fill=%27white%27%3ENV%3C/text%3E%3C/svg%3E'" />
-                      <div>
-                        <h4 style="color: var(--clr-white); margin: 0 0 0.5rem 0; font-size: 1.3rem;">Neha Verma</h4>
-                        <p style="color: var(--clr-main); margin: 0; font-size: 0.9rem; font-weight: 600;">React.js - 2 Months</p>
-                        <p style="color: var(--clr-grey); margin: 0.3rem 0 0 0; font-size: 0.85rem;">BCA</p>
-                      </div>
-                    </div>
-                    <p style="color: var(--clr-grey); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"Wonderful learning experience! Started with zero knowledge of React and now I'm building professional applications. The project-based learning approach made complex concepts easy to understand."</p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                      <span style="background: rgba(67, 233, 123, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">✓ Certified</span>
-                      <span style="background: rgba(67, 233, 123, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">★ 5.0 Rating</span>
-                      <span style="background: rgba(67, 233, 123, 0.2); color: var(--clr-main); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📅 Completed 2024</span>
-                    </div>
-                    <button class="view-details-btn" style="margin-top: 1.5rem; padding: 0.6rem 1.5rem; background: var(--clr-main); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">View Full Details</button>
+                  <div style="background: var(--clr-dark-blue); border-radius: 15px; padding: 3rem 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); min-height: 350px; display: flex; align-items: center; justify-content: center;">
+                    <p style="color: var(--clr-grey); font-size: 1.1rem; text-align: center;">
+                      <i class="bi bi-hourglass-split" style="font-size: 2rem; display: block; margin-bottom: 1rem; color: var(--clr-main);"></i>
+                      Loading students...
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             
             <!-- Right Arrow -->
-            <button class="student-testimonials-next" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: var(--clr-main); color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+            <button class="student-testimonials-next" style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); background: var(--clr-main); color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
               <i class="bi bi-chevron-right"></i>
             </button>
           </div>
@@ -342,56 +269,44 @@
     
     <!-- Start  page-footer Section-->
     <footer class="page-footer dark-color-footer" id="page-footer">
-      <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg" data-bg-opacity=".25"></div>
+      <div class="overlay-photo-image-bg" data-bg-opacity=".25"></div>
       <div class="container">
         <div class="row footer-cols">
-          <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo"/>
+          <div class="col-12 col-md-8 col-lg-4  footer-col ">
+            <img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo" style="margin-bottom: 0.75rem;"/>
             <div class="footer-col-content-wrapper">        
-              <p class="footer-text-about-us ">
+              <p class="footer-text-about-us " style="margin-top: 0;">
                 Providing the best services and IT solutions requires a combination of technical expertise, customer-focused strategies, and cutting-edge technologies.
                 
               </p>
             </div>
-            <div class="form-area ">
-              <div class="mailchimp-form ">
-                <form class="one-field-form" method="post" action="#0">
-                  <div class="field-group ">
-                    <label class="email-label" for="email-input"> Subscribe to our news letter</label>
-                    <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Email Address" autocomplete="off"/>
-                    <div class="cta-area">
-                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"/>
-                    </div>
-                  </div><span class="email-notice">*we will not share your personal info</span>
-                </form>
-              </div>
-            </div>
           </div>
           <div class="col-6 col-lg-2  footer-col ">
-            <h2 class=" footer-col-title    ">useful links</h2>
+            <h2 class=" footer-col-title    ">internship links</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu ">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Google</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">python-django</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Dribbble</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">Mern stack</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">linkedIn</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">PHP Laravel</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">wikipedia</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">.NET Full Stack</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-6 col-lg-2 footer-col ">
-            <h2 class=" footer-col-title    ">Resources</h2>
+            <h2 class=" footer-col-title    ">Services</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">support</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-web-development.html">Web Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">dashboard</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-apps-development.html">Apps Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">drivers</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-mern-mean-stack.html">Mern/Mean Stack</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">projects</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-python-course.html">Python Course</a>
                 </li>
               </ul>
             </div>
@@ -401,12 +316,12 @@
             <div class="footer-col-content-wrapper">       
               <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">infinity3tech@gmail.com</a></div>
               <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="info"> 205, Emerald Complex, CG Road, Near Mithakhali, Navrangpura, Ahmedabad Gujarat 380009</span></div>
-              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+20123456789">+91 7600512333, +91 6359301750  </a></div>
+              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+919429259294">+91 94292 59294 ,+91 84012 30372</a></div>
               <div class="contact-info-card">
                 <div class="social-icons">
                   <div class="sc-wrapper dir-row sc-size-32">
                     <ul class="sc-list">
-                      <li class="sc-item "><a class="sc-link" href="https://wa.me/9429259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
+                      <li class="sc-item "><a class="sc-link" href="https://wa.me/919409259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.youtube.com/@infinity3technology" target="_blank" rel="noopener" title="youtube"><i class="fab fa-youtube sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.instagram.com/infinity3technology/" target="_blank" rel="noopener" title="instagram"><i class="fab fa-instagram sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.linkedin.com/company/infinity-3-technology-private-limited/share/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in sc-icon"></i></a></li>
@@ -445,6 +360,9 @@
     <!-- Start back-to-top Component-->
     <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
     </div>
+    <a class="whatsapp-floating" href="https://wa.me/919409259294" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
     <!-- End back-to-top Component-->   
     
     <!-- Start Apply Now Modal -->
@@ -465,22 +383,11 @@
           </div>
           <div>
             <label style="color: var(--clr-white); display: block; margin-bottom: 0.5rem; font-weight: 600;">Mobile No <span style="color: #ff6b6b;">*</span></label>
-            <input type="tel" id="mobile-no" name="mobile_no" placeholder="Enter your mobile number" required pattern="[0-9]{10}" style="width: 100%; padding: 0.75rem; border: 1px solid var(--clr-grey); border-radius: 5px; background: var(--clr-dark); color: var(--clr-white); font-family: inherit;" />
+            <input type="tel" id="mobile-no" name="mobile_no" placeholder="Enter your mobile number" required pattern="[0-9]{10}" inputmode="numeric" minlength="10" maxlength="10" oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)" style="width: 100%; padding: 0.75rem; border: 1px solid var(--clr-grey); border-radius: 5px; background: var(--clr-dark); color: var(--clr-white); font-family: inherit;" />
           </div>
           <div>
             <label style="color: var(--clr-white); display: block; margin-bottom: 0.5rem; font-weight: 600;">Email <span style="color: #ff6b6b;">*</span></label>
             <input type="email" id="email" name="email" placeholder="Enter your email address" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--clr-grey); border-radius: 5px; background: var(--clr-dark); color: var(--clr-white); font-family: inherit;" />
-          </div>
-          <div>
-            <label style="color: var(--clr-white); display: block; margin-bottom: 0.5rem; font-weight: 600;">Course <span style="color: #ff6b6b;">*</span></label>
-            <select id="course" name="course" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--clr-grey); border-radius: 5px; background: var(--clr-dark-blue); color: var(--clr-white); font-family: inherit; font-size: 1rem;">
-              <option value="" style="background: var(--clr-dark-blue); color: var(--clr-grey);">Select a course</option>
-              <option value="Diploma" style="background: var(--clr-dark-blue); color: var(--clr-white);">Diploma</option>
-              <option value="Graduation" style="background: var(--clr-dark-blue); color: var(--clr-white);">Graduation</option>
-              <option value="Post Graduation" style="background: var(--clr-dark-blue); color: var(--clr-white);">Post Graduation</option>
-              <option value="PhD" style="background: var(--clr-dark-blue); color: var(--clr-white);">PhD</option>
-              <option value="Others" style="background: var(--clr-dark-blue); color: var(--clr-white);">Others</option>
-            </select>
           </div>
           <div>
             <label style="color: var(--clr-white); display: block; margin-bottom: 0.5rem; font-weight: 600;">Department <span style="color: #ff6b6b;">*</span></label>
@@ -560,6 +467,47 @@
         <script>
           // Internship Page Interactivity
           document.addEventListener('DOMContentLoaded', function() {
+            // Global variables for API data
+            let coursesData = [];
+            let departmentsData = [];
+            
+            // Fetch courses from API
+            fetch('https://karmyog.pythonanywhere.com/courses/')
+              .then(response => response.json())
+              .then(data => {
+                if (data.status === 'Success' && data.data) {
+                  coursesData = data.data;
+                  console.log('Courses loaded:', coursesData);
+                }
+              })
+              .catch(error => console.error('Error fetching courses:', error));
+            
+            // Fetch departments from API and populate dropdown
+            fetch('https://karmyog.pythonanywhere.com/departments/')
+              .then(response => response.json())
+              .then(data => {
+                if (data.status === 'Success' && data.data) {
+                  departmentsData = data.data;
+                  
+                  // Populate department dropdown
+                  const departmentSelect = document.getElementById('department');
+                  // Clear existing options except the first one
+                  departmentSelect.innerHTML = '<option value="" style="background: var(--clr-dark-blue); color: var(--clr-grey);">Select a department</option>';
+                  
+                  // Add departments from API
+                  departmentsData.forEach(dept => {
+                    const option = document.createElement('option');
+                    option.value = dept.DepartmentMasterID;
+                    option.textContent = dept.DepartmentName;
+                    option.style.cssText = 'background: var(--clr-dark-blue); color: var(--clr-white);';
+                    departmentSelect.appendChild(option);
+                  });
+                  
+                  console.log('Departments loaded:', departmentsData);
+                }
+              })
+              .catch(error => console.error('Error fetching departments:', error));
+            
             // Initialize Technology Slideshow with Swiper
             const techSlideshow = new Swiper('.tech-slideshow', {
               slidesPerView: 1,
@@ -584,6 +532,49 @@
             const durationContainer = document.getElementById('duration-container');
             
             const durations = {
+                 'python-django': {
+                name: 'Python Django',
+                icon: '<i class="fab fa-python"></i>',
+                durations: [
+                  {
+                    name: '15 Days',
+                    badge: 'Starter',
+                    features: ['Python FullStack RoadMap','Python Theory+Pratical ', 'knowledge Boost Session', 'Mini Website', 'Certificate', ]
+                  },
+                  {
+                    name: '1 Month',
+                    badge: 'Basic',
+                    features: ['Core Python', 'Coding Practice', 'Overview of Database', 'Website', 'Certificate']
+                  },
+                  {
+                    name: '2 Months',
+                    badge: 'Intermediate',
+                    features: [' Python', 'Database relationships', 'Github','Mini Project',  'Certificate']
+                  },
+                  {
+                    name: '3 Months',
+                    badge: 'Professional',
+                    features: ['Django Framework', 'CRUD Operation', 'Authentication+Pyment Gateway', 'E Commerce Project', 'Certificate']
+                  },
+                  {
+                    name: '4 Months',
+                    badge: 'Expert',
+                    features: ['Testing & TDD', 'Celery tasks', 'Deployment on servers', 'Security best practices', '4 Advanced projects']
+                  },
+                  {
+                    name: '6 Months',
+                    badge: 'Master',
+                    features: ['Microservices design', 'Docker containerization', 'CI/CD pipelines', 'Performance tuning', '5-6 Enterprise solutions']
+                  },
+                  {
+                    name: '1 Year',
+                    badge: 'Premium',
+                    features: ['Expert Django architect', 'System design mastery', 'Open source contribution', 'Team mentoring ready', 'Consulting capability']
+                  }
+                ]
+              },
+
+
               'php-laravel': {
                 name: 'PHP Laravel',
                 icon: '<i class="fab fa-php"></i>',
@@ -666,47 +657,7 @@
                   }
                 ]
               },
-              'python-django': {
-                name: 'Python Django',
-                icon: '<i class="fab fa-python"></i>',
-                durations: [
-                  {
-                    name: '15 Days',
-                    badge: 'Starter',
-                    features: ['Python basics for web', 'Django setup', 'URL routing', 'First project']
-                  },
-                  {
-                    name: '1 Month',
-                    badge: 'Basic',
-                    features: ['Django models & ORM', 'Django admin panel', 'Views & templates', 'Forms handling', 'Basic application']
-                  },
-                  {
-                    name: '2 Months',
-                    badge: 'Intermediate',
-                    features: ['Class-based views', 'Database relationships', 'User authentication', 'Middleware concepts', '2 Complete projects']
-                  },
-                  {
-                    name: '3 Months',
-                    badge: 'Professional',
-                    features: ['REST API with DRF', 'Advanced queries', 'Caching strategies', 'Email integration', '3 Web applications']
-                  },
-                  {
-                    name: '4 Months',
-                    badge: 'Expert',
-                    features: ['Testing & TDD', 'Celery tasks', 'Deployment on servers', 'Security best practices', '4 Advanced projects']
-                  },
-                  {
-                    name: '6 Months',
-                    badge: 'Master',
-                    features: ['Microservices design', 'Docker containerization', 'CI/CD pipelines', 'Performance tuning', '5-6 Enterprise solutions']
-                  },
-                  {
-                    name: '1 Year',
-                    badge: 'Premium',
-                    features: ['Expert Django architect', 'System design mastery', 'Open source contribution', 'Team mentoring ready', 'Consulting capability']
-                  }
-                ]
-              },
+             
               'dotnet': {
                 name: '.NET Full Stack',
                 icon: '<i class="fab fa-microsoft"></i>',
@@ -1021,6 +972,8 @@
             });
 
             // Delegated event listener for dynamically created duration buttons
+            let selectedCourseID = null;
+            
             document.addEventListener('click', function(e) {
               // Handle Apply Now button from duration boxes
               if (e.target.classList.contains('duration-apply')) {
@@ -1028,6 +981,15 @@
                 const durationName = durationBox.querySelector('.duration-name').textContent;
                 const titleEl = durationContainer.querySelector('.duration-title');
                 const selectedTechnology = titleEl.textContent.split(' - ')[0];
+                
+                // Find CourseID from API data
+                selectedCourseID = 1; // Default fallback
+                if (coursesData.length > 0) {
+                  const course = coursesData.find(c => c.CourseName === selectedTechnology);
+                  if (course) {
+                    selectedCourseID = course.CourseMasterID;
+                  }
+                }
                 
                 // Set form values and show apply modal
                 document.getElementById('form-tech').textContent = selectedTechnology;
@@ -1097,27 +1059,67 @@
             document.getElementById('apply-form').addEventListener('submit', function(e) {
               e.preventDefault();
               
-              const formData = {
-                technology: document.getElementById('form-tech').textContent,
-                duration: document.getElementById('form-duration').textContent,
-                fullName: document.getElementById('full-name').value,
-                mobileNo: document.getElementById('mobile-no').value,
-                email: document.getElementById('email').value,
-                course: document.getElementById('course').value,
-                department: document.getElementById('department').value,
-                currentCity: document.getElementById('current-city').value
+              // Get selected technology name
+              const selectedTechnology = document.getElementById('form-tech').textContent;
+              
+              // Find CourseID from API data
+              let courseID = selectedCourseID || 1;
+              if (coursesData.length > 0) {
+                const course = coursesData.find(c => c.CourseName === selectedTechnology);
+                if (course) {
+                  courseID = course.CourseMasterID;
+                }
+              }
+              
+              // Get DepartmentID from selected dropdown value (already contains DepartmentMasterID from API)
+              const departmentID = parseInt(document.getElementById('department').value) || 1;
+              
+              const apiData = {
+                FullName: document.getElementById('full-name').value,
+                ContactNo: document.getElementById('mobile-no').value,
+                Email: document.getElementById('email').value,
+                CourseID: courseID,
+                DepartmentID: departmentID,
+                CurrentCity: document.getElementById('current-city').value || ''
               };
               
-              // Log form data (in production, send to server)
-              console.log('Application submitted:', formData);
+              // Show loading state
+              const submitBtn = e.target.querySelector('button[type="submit"]');
+              const originalBtnText = submitBtn.textContent;
+              submitBtn.textContent = 'Submitting...';
+              submitBtn.disabled = true;
               
-              // Show success message
-              alert('Application submitted successfully! We will contact you soon.');
-              
-              // Reset form and close modal
-              document.getElementById('apply-form').reset();
-              document.getElementById('apply-modal').style.display = 'none';
-              document.body.style.overflow = 'auto';
+              // Send to API
+              fetch('https://karmyog.pythonanywhere.com/students/', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(apiData)
+              })
+              .then(response => response.json())
+              .then(data => {
+                if (data.status === 'Success' || data.statusCode === 201) {
+                  // Show success message
+                  alert('Application submitted successfully! We will contact you soon.');
+                  
+                  // Reset form and close modal
+                  document.getElementById('apply-form').reset();
+                  document.getElementById('apply-modal').style.display = 'none';
+                  document.body.style.overflow = 'auto';
+                } else {
+                  throw new Error(data.message || 'Submission failed');
+                }
+              })
+              .catch(error => {
+                console.error('Error submitting application:', error);
+                alert('There was an error submitting your application. Please try again.');
+              })
+              .finally(() => {
+                // Restore button state
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+              });
             });
             
             // Close Details modal handler
@@ -1168,8 +1170,146 @@
               return 'Comprehensive learning experience tailored to your goals with expert guidance and hands-on practice.';
             }
 
+      // Render dummy student testimonials (no live registration data)
+      function renderStudentSlides() {
+        const wrapper = document.querySelector('.student-testimonials-slider .swiper-wrapper');
+        if (!wrapper) return;
+        wrapper.innerHTML = '';
+
+        const colorSchemes = [
+          { bg: '#667eea', shadow: 'rgba(102, 126, 234, 0.2)' },
+          { bg: '#f093fb', shadow: 'rgba(240, 147, 251, 0.2)' },
+          { bg: '#4facfe', shadow: 'rgba(79, 172, 254, 0.2)' },
+          { bg: '#43e97b', shadow: 'rgba(67, 233, 123, 0.2)' }
+        ];
+
+        // Add responsive styles
+        const style = document.createElement('style');
+        style.textContent = `
+          @media (max-width: 768px) {
+            .student-card-skills-achievements {
+              grid-template-columns: 1fr !important;
+            }
+            .student-card-header {
+              flex-direction: column;
+              align-items: flex-start !important;
+            }
+            .student-card-avatar {
+              width: 50px !important;
+              height: 50px !important;
+              font-size: 1.2rem !important;
+              margin-bottom: 0.5rem;
+            }
+            .student-card-info h4 {
+              font-size: 1rem !important;
+            }
+            .student-card-info p {
+              font-size: 0.8rem !important;
+            }
+            .student-card-rating {
+              flex-wrap: wrap;
+              gap: 0.4rem !important;
+            }
+            .student-card-testimonial {
+              font-size: 0.75rem !important;
+              -webkit-line-clamp: 2 !important;
+            }
+            .student-card-skill-tag {
+              font-size: 0.65rem !important;
+              padding: 0.15rem 0.35rem !important;
+            }
+            .student-card-achievement {
+              font-size: 0.7rem !important;
+            }
+          }
+          @media (max-width: 480px) {
+            .student-testimonial-card {
+              padding: 1.2rem !important;
+            }
+            .student-card-info h4 {
+              font-size: 0.95rem !important;
+            }
+            .student-card-info p {
+              font-size: 0.75rem !important;
+            }
+            .view-details-btn {
+              font-size: 0.85rem !important;
+              padding: 0.5rem 0.8rem !important;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+
+        Object.entries(studentData).forEach(([id, student], index) => {
+          const color = colorSchemes[index % colorSchemes.length];
+          const initials = student.name.split(' ').map(n => n[0]).join('').substring(0,2).toUpperCase();
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `
+            <div class="student-testimonial-card" data-student-id="${id}" style="background: var(--clr-dark-blue); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+              <!-- Header -->
+              <div class="student-card-header" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.2rem;">
+                <div class="student-card-avatar" style="width: 70px; height: 70px; border-radius: 50%; background: ${color.bg}; display: flex; align-items: center; justify-content: center; border: 3px solid var(--clr-main); font-size: 1.8rem; font-weight: bold; color: white; flex-shrink: 0;">
+                  ${initials}
+                </div>
+                <div class="student-card-info" style="flex: 1; min-width: 0;">
+                  <h4 style="color: var(--clr-white); margin: 0 0 0.3rem 0; font-size: 1.15rem; font-weight: 600; word-break: break-word;">${student.name}</h4>
+                  <p style="color: var(--clr-main); margin: 0 0 0.2rem 0; font-size: 0.9rem; font-weight: 600;">${student.course}</p>
+                  <p style="color: var(--clr-grey); margin: 0; font-size: 0.8rem;">${student.duration}</p>
+                </div>
+              </div>
+
+              <!-- Rating & Completion -->
+              <div class="student-card-rating" style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 0.3rem;">
+                  <span style="color: #ffc107; font-size: 0.9rem;">★</span>
+                  <span style="color: var(--clr-white); font-size: 0.85rem; font-weight: 600;">${student.rating}/5.0</span>
+                </div>
+                <span style="color: var(--clr-grey); font-size: 0.7rem;">•</span>
+                <span style="background: ${color.shadow}; color: var(--clr-main); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500; white-space: nowrap;">✓ ${student.completionDate}</span>
+              </div>
+
+              <!-- Testimonial Preview -->
+              <div class="student-card-testimonial" style="background: rgba(102, 126, 234, 0.12); border-left: 3px solid var(--clr-main); padding: 0.8rem; border-radius: 4px; margin-bottom: 0.8rem; flex: 1; overflow: hidden;">
+                <p style="color: var(--clr-grey); font-style: italic; line-height: 1.4; margin: 0; font-size: 0.8rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">"${student.testimonial}"</p>
+              </div>
+
+              <!-- Skills & Achievements Grid -->
+              <div class="student-card-skills-achievements" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 0.8rem; font-size: 0.75rem;">
+                <div style="min-width: 0;">
+                  <div style="color: var(--clr-main); font-weight: 600; margin-bottom: 0.3rem;">🛠️ Skills</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.3rem;">
+                    ${student.skills.slice(0, 3).map(skill => `<span class="student-card-skill-tag" style="background: rgba(9, 175, 244, 0.2); color: var(--clr-main); padding: 0.2rem 0.4rem; border-radius: 3px; font-size: 0.7rem; white-space: nowrap;">${skill}</span>`).join('')}
+                    ${student.skills.length > 3 ? `<span style="color: var(--clr-grey); font-size: 0.7rem;">+${student.skills.length - 3}</span>` : ''}
+                  </div>
+                </div>
+                <div style="min-width: 0;">
+                  <div style="color: var(--clr-main); font-weight: 600; margin-bottom: 0.3rem;">🏆 Achievements</div>
+                  <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                    ${student.achievements.slice(0, 2).map(ach => `<div class="student-card-achievement" style="color: var(--clr-grey); font-size: 0.7rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">✓ ${ach}</div>`).join('')}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Projects Count -->
+              <div style="background: rgba(102, 126, 234, 0.08); padding: 0.6rem; border-radius: 4px; margin-bottom: 0.8rem; text-align: center;">
+                <div style="color: var(--clr-main); font-weight: 600; font-size: 0.9rem;">💼 ${student.projects.length} Projects Completed</div>
+              </div>
+
+              <!-- View Certificate Button -->
+              <button class="view-details-btn" style="padding: 0.6rem 1rem; background: var(--clr-main); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; width: 100%; margin-top: auto;">View Full Certificate</button>
+            </div>
+          `;
+          wrapper.appendChild(slide);
+        });
+
+        if (window.studentTestimonialsSlider) {
+          window.studentTestimonialsSlider.update();
+        }
+      }
+
       // Initialize Student Testimonials Slider
-      const studentTestimonialsSlider = new Swiper('.student-testimonials-slider', {
+      window.studentTestimonialsSlider = new Swiper('.student-testimonials-slider', {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
@@ -1180,7 +1320,7 @@
         }
       });
 
-      // Student Data Object
+      // Student Data Object (dummy)
       const studentData = {
         1: {
           name: 'Rahul Kumar',
@@ -1189,10 +1329,8 @@
           duration: '3 Months (Professional)',
           department: 'Computer Engineering',
           college: 'Rajiv Gandhi Technical University',
-          city: 'Bhopal, MP',
           completionDate: 'March 2025',
           rating: 5.0,
-          certificateNo: 'INF-PL-2025-001',
           projects: [
             'E-commerce Platform with Payment Gateway',
             'Content Management System',
@@ -1210,10 +1348,8 @@
           duration: '6 Months (Master)',
           department: 'MCA',
           college: 'Institute of Technology',
-          city: 'Indore, MP',
           completionDate: 'February 2025',
           rating: 5.0,
-          certificateNo: 'INF-MERN-2025-002',
           projects: [
             'Social Media Dashboard',
             'E-learning Platform',
@@ -1233,10 +1369,8 @@
           duration: '4 Months (Expert)',
           department: 'B.Sc IT',
           college: 'Devi Ahilya University',
-          city: 'Indore, MP',
           completionDate: 'January 2025',
           rating: 4.9,
-          certificateNo: 'INF-PD-2025-003',
           projects: [
             'Blog Application with CMS',
             'REST API for Mobile App',
@@ -1255,10 +1389,8 @@
           duration: '2 Months (Intermediate)',
           department: 'BCA',
           college: 'Prestige Institute',
-          city: 'Indore, MP',
           completionDate: 'December 2024',
           rating: 5.0,
-          certificateNo: 'INF-REACT-2024-004',
           projects: [
             'Personal Portfolio Website',
             'Weather Dashboard',
@@ -1271,7 +1403,7 @@
         }
       };
 
-      // Student testimonial card click handler
+      // Replace modal with a basic certificate layout (no registration details)
       document.addEventListener('click', function(e) {
         const testimonialCard = e.target.closest('.student-testimonial-card');
         const viewDetailsBtn = e.target.closest('.view-details-btn');
@@ -1284,91 +1416,101 @@
           if (student) {
             const modalContent = document.getElementById('student-modal-content');
             modalContent.innerHTML = `
-              <!-- Single Unified Box Design -->
-              <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%); border: 2px solid var(--clr-main); border-radius: 12px; overflow: hidden;">
-                
-                <!-- Header Section -->
-                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 100%); padding: 2rem; text-align: center; border-bottom: 2px solid rgba(102, 126, 234, 0.3);">
-                  <img src="${student.photo}" alt="${student.name}" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 4px solid var(--clr-main); margin-bottom: 1rem;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27%3E%3Crect fill=%27%23667eea%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2760%27 fill=%27white%27%3E${student.name.charAt(0)}%3C/text%3E%3C/svg%3E'" />
-                  <h2 style="color: var(--clr-white); margin: 0 0 0.5rem 0; font-size: 1.8rem; font-weight: 700;">${student.name}</h2>
-                  <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.8rem; flex-wrap: wrap; font-size: 0.95rem;">
-                    <span style="color: var(--clr-main); font-weight: 600;">${student.course}</span>
-                    <span style="color: var(--clr-grey);">•</span>
-                    <span style="color: var(--clr-grey);">${student.duration}</span>
-                  </div>
-                  <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                    <span style="color: #ffc107;">★</span>
-                    <span style="color: var(--clr-white); font-weight: 600;">${student.rating}/5.0</span>
-                  </div>
+              <div style="background: var(--clr-dark); border-radius: 12px; overflow: hidden;">
+                <!-- Certificate Header -->
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 100%); border-bottom: 2px solid rgba(102, 126, 234, 0.3); padding: 2.5rem 2rem; text-align: center;">
+                  <h2 style="color: var(--clr-main); margin: 0 0 0.5rem 0; font-size: 2rem; font-weight: 800; letter-spacing: 1px;">Certificate of Completion</h2>
+                  <p style="color: var(--clr-grey); margin: 0; font-size: 0.95rem;">Infinity3 Technology Internship Program</p>
                 </div>
 
-                <!-- Content Section -->
-                <div style="padding: 2rem;">
-                  
+                <!-- Main Content -->
+                <div style="padding: 2.5rem;">
+                  <!-- Student Name & Core Info -->
+                  <div style="text-align: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid rgba(102, 126, 234, 0.2);">
+                    <div style="color: var(--clr-white); font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">${student.name}</div>
+                    <div style="color: var(--clr-main); font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem;">${student.course}</div>
+                    <div style="color: var(--clr-grey); font-size: 0.9rem;">Duration: ${student.duration}</div>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 0.8rem;">
+                      <span style="color: #ffc107;">★</span>
+                      <span style="color: var(--clr-white); font-weight: 600;">${student.rating}/5.0</span>
+                    </div>
+                  </div>
+
                   <!-- Testimonial -->
                   <div style="background: rgba(102, 126, 234, 0.15); border-left: 4px solid var(--clr-main); padding: 1.2rem; border-radius: 6px; margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--clr-main); margin: 0 0 0.6rem 0; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Student Testimonial</h4>
                     <p style="color: var(--clr-grey); font-style: italic; line-height: 1.6; margin: 0; font-size: 0.95rem;">"${student.testimonial}"</p>
                   </div>
 
-                  <!-- Info Grid (2 Columns) -->
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="background: var(--clr-dark); padding: 1rem; border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.2);">
-                      <h4 style="color: var(--clr-main); margin: 0 0 0.6rem 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">📚 Education</h4>
-                      <p style="color: var(--clr-white); margin: 0 0 0.2rem 0; font-size: 0.9rem; font-weight: 500;">${student.department}</p>
-                      <p style="color: var(--clr-grey); margin: 0; font-size: 0.8rem;">${student.college}</p>
+                  <!-- Education & Details Grid -->
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1rem; border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.2);">
+                      <h5 style="color: var(--clr-main); margin: 0 0 0.5rem 0; font-size: 0.8rem; text-transform: uppercase;">Department</h5>
+                      <p style="color: var(--clr-white); margin: 0; font-size: 0.9rem; font-weight: 500;">${student.department}</p>
                     </div>
-                    
-                    <div style="background: var(--clr-dark); padding: 1rem; border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.2);">
-                      <h4 style="color: var(--clr-main); margin: 0 0 0.6rem 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">🎓 Certificate</h4>
-                      <p style="color: var(--clr-white); margin: 0 0 0.2rem 0; font-size: 0.9rem; font-weight: 500; font-family: 'Courier New', monospace;">${student.certificateNo}</p>
-                      <p style="color: var(--clr-grey); margin: 0; font-size: 0.8rem;">Completed: ${student.completionDate}</p>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1rem; border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.2);">
+                      <h5 style="color: var(--clr-main); margin: 0 0 0.5rem 0; font-size: 0.8rem; text-transform: uppercase;">College</h5>
+                      <p style="color: var(--clr-white); margin: 0; font-size: 0.9rem; font-weight: 500;">${student.college}</p>
+                    </div>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1rem; border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.2);">
+                      <h5 style="color: var(--clr-main); margin: 0 0 0.5rem 0; font-size: 0.8rem; text-transform: uppercase;">Completion Date</h5>
+                      <p style="color: var(--clr-white); margin: 0; font-size: 0.9rem; font-weight: 600;">${student.completionDate}</p>
                     </div>
                   </div>
 
-                  <!-- Skills and Achievements Row -->
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
-                    <!-- Skills -->
-                    <div>
-                      <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">🛠️ Skills</h4>
-                      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        ${student.skills.map(skill => `
-                          <span style="background: var(--clr-main); color: white; padding: 0.3rem 0.7rem; border-radius: 16px; font-size: 0.8rem; font-weight: 500;">${skill}</span>
-                        `).join('')}
-                      </div>
+                  <!-- Skills -->
+                  <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">🛠️ Technical Skills</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                      ${student.skills.map(skill => `
+                        <span style="background: var(--clr-main); color: white; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">${skill}</span>
+                      `).join('')}
                     </div>
+                  </div>
 
-                    <!-- Achievements -->
-                    <div>
-                      <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">🏆 Achievements</h4>
-                      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem;">
-                        ${student.achievements.slice(0, 3).map(achievement => `
-                          <li style="color: var(--clr-grey); font-size: 0.85rem; display: flex; align-items: flex-start; gap: 0.5rem;">
-                            <i class="bi bi-check-circle" style="color: var(--clr-main); flex-shrink: 0; margin-top: 0.1rem; font-size: 0.8rem;"></i>
-                            <span>${achievement}</span>
-                          </li>
-                        `).join('')}
-                      </ul>
-                    </div>
+                  <!-- Achievements -->
+                  <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">🏆 Key Achievements</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                      ${student.achievements.map(achievement => `
+                        <li style="color: var(--clr-grey); font-size: 0.9rem; display: flex; align-items: flex-start; gap: 0.6rem;">
+                          <i class="bi bi-check-circle" style="color: var(--clr-main); flex-shrink: 0; margin-top: 0.1rem; font-size: 0.9rem;"></i>
+                          <span>${achievement}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
                   </div>
 
                   <!-- Projects -->
-                  <div style="margin-bottom: 1.5rem;">
-                    <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">💼 Projects</h4>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                  <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--clr-white); margin: 0 0 0.8rem 0; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">💼 Projects Completed</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem;">
                       ${student.projects.map((project, index) => `
-                        <div style="display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem; background: rgba(102, 126, 234, 0.1); border-radius: 6px;">
-                          <span style="flex-shrink: 0; width: 28px; height: 28px; background: var(--clr-main); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 600;">${index + 1}</span>
-                          <span style="color: var(--clr-grey); font-size: 0.85rem;">${project}</span>
+                        <div style="display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.8rem; background: rgba(102, 126, 234, 0.1); border-radius: 6px; border: 1px solid rgba(102, 126, 234, 0.15);">
+                          <span style="flex-shrink: 0; width: 32px; height: 32px; background: var(--clr-main); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">${index + 1}</span>
+                          <span style="color: var(--clr-grey); font-size: 0.85rem; line-height: 1.4;">${project}</span>
                         </div>
                       `).join('')}
                     </div>
                   </div>
 
-                  <!-- Certificate Download Button -->
-                  <div style="text-align: center; padding-top: 1rem; border-top: 2px solid rgba(102, 126, 234, 0.2);">
-                    <button onclick="window.open('${student.certificateUrl}', '_blank')" style="padding: 0.8rem 2rem; background: var(--clr-main); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
-                      <i class="bi bi-download"></i> Download Certificate
-                    </button>
+                  <!-- Signature Section -->
+                  <div style="border-top: 2px solid rgba(102, 126, 234, 0.2); padding-top: 2rem;">
+                    <div style="display:flex; justify-content: space-between; align-items:flex-start; gap: 2rem;">
+                      <div style="text-align:center; flex:1;">
+                        <div style="height: 50px;"></div>
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.4);"></div>
+                        <div style="color: var(--clr-grey); font-size: 0.85rem; margin-top: 0.6rem; font-weight: 500;">Authorized Signatory</div>
+                      </div>
+                      <div style="text-align:center; flex:1;">
+                        <div style="height: 50px;"></div>
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.4);"></div>
+                        <div style="color: var(--clr-grey); font-size: 0.85rem; margin-top: 0.6rem; font-weight: 500;">Head of Training</div>
+                      </div>
+                    </div>
+                    <div style="text-align:center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(102, 126, 234, 0.2); color: var(--clr-grey); font-size: 0.8rem;">
+                      Infinity3 Technology • Internship Program • www.infinity3.in
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1411,6 +1553,9 @@
         }
       `;
       document.head.appendChild(style);
+      
+      // Populate dummy slides
+      renderStudentSlides();
           });
         </script>
   </body>
