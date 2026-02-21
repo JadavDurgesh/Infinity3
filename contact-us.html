@@ -99,45 +99,6 @@
     <!--End Page Header-->
     <div style="height: 100px;"></div>
     <br><br>
-    <!-- Start  locations Section-->
-    <section class="locations-section  mega-section" style="padding-top: 0; padding-bottom: 3rem;">
-      <div class="container">
-        <div class="sec-heading centered  ">
-          <div class="content-area">
-            <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Our offices </h2>
-          </div>
-        </div>
-        <div class=" contact-info-panel ">
-          <div class="info-section ">
-            <div class="row">
-              <div class="col-12 col-lg-4">     
-                <div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
-                  <h4 class="location-title">India</h4>
-                  <div class="line-on-side "> </div>
-                  <p class="location-address">205, Emerald Complex, CG Road, Near Mithakhali, Navrangpura, Ahmedabad Gujarat 380009</p>
-                  <div class="location-card  "><i class="bi bi-envelope-at-fill icon"></i>
-                    <div class="card-content">
-                      <h6 class="content-title">email:</h6><a class="email link" href="mailto:yourname@example.com">infinity3tech@gmail.com</a>
-                    </div>
-                  </div>
-                  <div class="location-card  "><i class="bi bi-telephone-inbound-fill icon"></i>
-                    <div class="card-content">
-                      <h6 class="content-title">phone:</h6><a class="tel link" href="tel:0123456789">+917600512333,+916359301750</a>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="col-12 col-lg-8">
-                <div class="gmap_canvas">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29374.50828925217!2d72.54170137076837!3d23.03061764854715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85738e858e2f%3A0xbfd0230748103b87!2sInfinite%20D%20Technology!5e0!3m2!1sen!2sin!4v1762246490851!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
     <!-- Start  contact Section-->
     <section class="contact-us mega-section" id="contact-us" style="scroll-margin-top: 100px; padding-top: 0; padding-bottom: 5rem;">
       <div class="container">
@@ -153,7 +114,7 @@
               <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
                 <div class="custom-form-area input-boxed"> 
                   <!--Form To have user messages-->
-                  <form class="main-form" id="contact-us-form" action="php/send-mail.php" method="post"><span class="done-msg"></span>
+                  <form class="main-form" id="contact-us-form" action="#" method="post"><span class="done-msg"></span>
                     <div class="row ">
                       <div class="col-12 col-lg-6">
                         <div class="   input-wrapper">
@@ -163,8 +124,14 @@
                       </div>
                       <div class="col-12 col-lg-6">
                         <div class="   input-wrapper">
-                          <input class="text-input" id="user-email" name="UserEmail" type="email"/>
+                          <input class="text-input" id="user-email" name="UserEmail" type="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"/>
                           <label class="input-label" for="user-email"> E-mail <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="   input-wrapper">
+                          <input class="text-input" id="user-phone" name="ContactNo" type="tel" required inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9]{10}" oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)"/>
+                          <label class="input-label" for="user-phone"> Contact Number <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                         </div>
                       </div>
                       <div class="col-12 ">
@@ -192,59 +159,85 @@
       </div>
     </section>
     <!-- End  contact form Section-->
+    <!-- Start  locations Section-->
+    <section class="locations-section  mega-section" style="padding-top: 0; padding-bottom: 3rem;">
+      <div class="container">
+        <div class="sec-heading centered  ">
+          <div class="content-area">
+            <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Our offices </h2>
+          </div>
+        </div>
+        <div class=" contact-info-panel ">
+          <div class="info-section ">
+            <div class="row">
+              <div class="col-12 col-lg-4">     
+                <div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
+                  <h4 class="location-title">India</h4>
+                  <div class="line-on-side "> </div>
+                  <p class="location-address">205, Emerald Complex, CG Road, Near Mithakhali, Navrangpura, Ahmedabad Gujarat 380009</p>
+                  <div class="location-card  "><i class="bi bi-envelope-at-fill icon"></i>
+                    <div class="card-content">
+                      <h6 class="content-title">email:</h6><a class="email link" href="mailto:infinity3tech@gmail.com">infinity3tech@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="location-card  "><i class="bi bi-telephone-inbound-fill icon"></i>
+                    <div class="card-content">
+                      <h6 class="content-title">phone:</h6><a class="tel link" href="tel:0123456789">+91 94292 59294 </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="gmap_canvas">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29374.50828925217!2d72.54170137076837!3d23.03061764854715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85738e858e2f%3A0xbfd0230748103b87!2sInfinite%20D%20Technology!5e0!3m2!1sen!2sin!4v1762246490851!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     
     <!-- Start  page-footer Section-->
     <footer class="page-footer dark-color-footer" id="page-footer">
-      <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg" data-bg-opacity=".25"></div>
+      <div class="overlay-photo-image-bg" data-bg-opacity=".25"></div>
       <div class="container">
         <div class="row footer-cols">
-          <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo"/>
+          <div class="col-12 col-md-8 col-lg-4  footer-col ">
+            <img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo" style="margin-bottom: 0.75rem;"/>
             <div class="footer-col-content-wrapper">        
-              <p class="footer-text-about-us ">
+              <p class="footer-text-about-us " style="margin-top: 0;">
                 Providing the best services and IT solutions requires a combination of technical expertise, customer-focused strategies, and cutting-edge technologies.
                 
               </p>
             </div>
-            <div class="form-area ">
-              <div class="mailchimp-form ">
-                <form class="one-field-form" method="post" action="#0">
-                  <div class="field-group ">
-                    <label class="email-label" for="email-input"> Subscribe to our news letter</label>
-                    <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Email Address" autocomplete="off"/>
-                    <div class="cta-area">
-                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"/>
-                    </div>
-                  </div><span class="email-notice">*we will not share your personal info</span>
-                </form>
-              </div>
-            </div>
           </div>
           <div class="col-6 col-lg-2  footer-col ">
-            <h2 class=" footer-col-title    ">useful links</h2>
+            <h2 class=" footer-col-title    ">internship links</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu ">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Google</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">python-django</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Dribbble</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">Mern stack</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">linkedIn</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">PHP Laravel</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">wikipedia</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">.NET Full Stack</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-6 col-lg-2 footer-col ">
-            <h2 class=" footer-col-title    ">Resources</h2>
+            <h2 class=" footer-col-title    ">Services</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">support</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-web-development.html">Web Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">dashboard</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-apps-development.html">Apps Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">drivers</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-mern-mean-stack.html">Mern/Mean Stack</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">projects</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-python-course.html">Python Course</a>
                 </li>
               </ul>
             </div>
@@ -254,12 +247,12 @@
             <div class="footer-col-content-wrapper">       
               <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">infinity3tech@gmail.com</a></div>
               <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="info"> 205, Emerald Complex, CG Road, Near Mithakhali, Navrangpura, Ahmedabad Gujarat 380009</span></div>
-              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+20123456789">+91 7600512333, +91 6359301750  </a></div>
+              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+919429259294">+91 94292 59294, +91 84012 30372</a></div>
               <div class="contact-info-card">
                 <div class="social-icons">
                   <div class="sc-wrapper dir-row sc-size-32">
                     <ul class="sc-list">
-                      <li class="sc-item "><a class="sc-link" href="https://wa.me/9429259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
+                      <li class="sc-item "><a class="sc-link" href="https://wa.me/919409259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.youtube.com/@infinity3technology" target="_blank" rel="noopener" title="youtube"><i class="fab fa-youtube sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.instagram.com/infinity3technology/" target="_blank" rel="noopener" title="instagram"><i class="fab fa-instagram sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.linkedin.com/company/infinity-3-technology-private-limited/share/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in sc-icon"></i></a></li>
@@ -298,6 +291,9 @@
     <!-- Start back-to-top Component-->
     <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
     </div>
+    <a class="whatsapp-floating" href="https://wa.me/919409259294" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
     <!-- End back-to-top Component-->   
         
         <!--     JQuery     -->
@@ -332,6 +328,90 @@
         
         <!--     main     -->
         <script src="js/main.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-us-form');
+            const nameInput = document.getElementById('user-name');
+            const emailInput = document.getElementById('user-email');
+            const phoneInput = document.getElementById('user-phone');
+            const subjectInput = document.getElementById('msg-subject');
+            const messageInput = document.getElementById('msg-text');
+
+            function showError(input, msg) {
+              const span = input.parentElement.querySelector('.error-msg');
+              if (span) {
+                span.textContent = msg;
+                span.style.display = 'block';
+                span.style.color = '#ff6b6b';
+                span.style.fontSize = '12px';
+                span.style.marginTop = '5px';
+              }
+              input.classList.add('invalid');
+            }
+
+            function clearError(input) {
+              const span = input.parentElement.querySelector('.error-msg');
+              if (span) { span.textContent = ''; span.style.display = 'none'; }
+              input.classList.remove('invalid');
+            }
+
+            // Email validation
+            emailInput.addEventListener('input', function() {
+              this.value = this.value.replace(/\s+/g, '').toLowerCase();
+            });
+            emailInput.addEventListener('blur', function() {
+              const v = this.value.trim();
+              const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+              if (!v) showError(this, 'Email is required');
+              else if (!re.test(v)) showError(this, 'Please enter a valid email');
+              else clearError(this);
+            });
+
+            // Phone validation
+            phoneInput.addEventListener('keypress', function(e) {
+              if (e.which < 48 || e.which > 57) e.preventDefault();
+              if (this.value.length >= 10) e.preventDefault();
+            });
+            phoneInput.addEventListener('blur', function() {
+              const v = this.value.trim();
+              if (!v) showError(this, 'Contact number is required');
+              else if (!/^[0-9]{10}$/.test(v)) showError(this, 'Enter a 10-digit phone number');
+              else clearError(this);
+            });
+
+            // Name, Subject, Message basic checks
+            nameInput.addEventListener('blur', function() {
+              const v = this.value.trim();
+              if (!v) showError(this, 'Name is required'); else clearError(this);
+            });
+            subjectInput.addEventListener('blur', function() {
+              const v = this.value.trim();
+              if (!v) showError(this, 'Subject is required'); else clearError(this);
+            });
+            messageInput.addEventListener('blur', function() {
+              const v = this.value.trim();
+              if (!v) showError(this, 'Message is required'); else clearError(this);
+            });
+
+            // Clear on focus
+            [nameInput, emailInput, phoneInput, subjectInput, messageInput].forEach(el => {
+              el.addEventListener('focus', function() { clearError(this); });
+            });
+
+            form.addEventListener('submit', function(e) {
+              let valid = true;
+              if (!nameInput.value.trim()) { showError(nameInput, 'Name is required'); valid = false; }
+              if (!emailInput.value.trim() || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailInput.value.trim())) {
+                showError(emailInput, 'Please enter a valid email'); valid = false;
+              }
+              if (!/^[0-9]{10}$/.test(phoneInput.value.trim())) { showError(phoneInput, 'Enter a 10-digit phone number'); valid = false; }
+              if (!subjectInput.value.trim()) { showError(subjectInput, 'Subject is required'); valid = false; }
+              if (!messageInput.value.trim()) { showError(messageInput, 'Message is required'); valid = false; }
+              if (!valid) { e.preventDefault(); return false; }
+              // Optionally show a success toast or prevent actual submit per requirements
+            });
+          });
+        </script>
   </body>
 </html>
 
