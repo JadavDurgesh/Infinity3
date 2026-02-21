@@ -98,151 +98,46 @@
     <!--End Page Header-->
     <div style="height: 100px;"></div>
     <br><br><br>
-    <!-- Start  Registration Form Section-->
-    <section class="internship-registration mega-section" id="registration" style="padding-bottom: 5rem;">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 ">
-            <div class="registration-form-panel">
-              <div class="sec-heading centered">
-                <div class="content-area">
-
-                  <h2 class="title wow fadeInUp" data-wow-delay=".4s">Registration <span class='hollow-text'>Form</span></h2>
-                  <p class="subtitle wow fadeInUp" data-wow-delay=".6s">Fill in your details to enroll in the internship program</p>
-                </div>
-              </div>
-              <div class="registration-form-inputs wow fadeInUp" data-wow-delay=".6s">
-                <div class="custom-form-area input-boxed"> 
-                  <!--Registration Form-->
-                  <form class="main-form" id="registration-form"><span class="done-msg"></span>
-                    <div class="row ">
-                      <div class="col-12 col-lg-6">
-                        <div class="input-wrapper">
-                          <input class="text-input" id="student-name" name="studentName" type="text" required/>
-                          <label class="input-label" for="student-name">Full Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="input-wrapper">
-                          <input class="text-input" id="college-name" name="collegeName" type="text" required/>
-                          <label class="input-label" for="college-name">College Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="input-wrapper">
-                          <select class="text-input select-input" id="degree" name="degree" required>
-                            <option value="">Select Degree</option>
-                            <option value="Diploma">Diploma</option>
-                            <option value="Graduation">Graduation</option>
-                            <option value="Post Graduation">Post Graduation</option>
-                            <option value="Others">Others</option>
-                          </select>
-                          <label class="input-label" for="degree">Degree <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 col-lg-6" id="other-degree-wrapper" style="display: none;">
-                        <div class="input-wrapper">
-                          <input class="text-input" id="other-degree" name="otherDegree" type="text"/>
-                          <label class="input-label" for="other-degree">Specify Degree <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="input-wrapper">
-                          <select class="text-input select-input" id="branch" name="branch" required>
-                            <option value="">Select Branch</option>
-                            <option value="Computer Engineering">Computer Engineering</option>
-                            <option value="Computer Science">Computer Science</option>
-                            <option value="IT">IT</option>
-                            <option value="BCA">BCA</option>
-                            <option value="MCA">MCA</option>
-                            <option value="BSc.IT">BSc.IT</option>
-                            <option value="MSc.IT">MSc.IT</option>
-                            <option value="Others">Others</option>
-                          </select>
-                          <label class="input-label" for="branch">Branch <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 col-lg-6" id="other-branch-wrapper" style="display: none;">
-                        <div class="input-wrapper">
-                          <input class="text-input" id="other-branch" name="otherBranch" type="text"/>
-                          <label class="input-label" for="other-branch">Specify Branch <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <!-- Hidden fields for technology and duration -->
-                      <input type="hidden" id="technology" name="technology"/>
-                      <input type="hidden" id="duration" name="duration"/>
-                      <div class="col-12 col-lg-6">
-                        <div class="input-wrapper">
-                          <input class="text-input" id="current-city" name="currentCity" type="text"/>
-                          <label class="input-label" for="current-city">Current City</label><span class="b-border"></span><span class="error-msg"></span>
-                        </div>
-                      </div>
-                      <div class="col-12 submit-wrapper">
-                        <button class="btn-solid" id="submit-btn" type="submit">Submit Registration</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End  Registration Form Section-->
+  
     
     <!-- Start  page-footer Section-->
     <footer class="page-footer dark-color-footer" id="page-footer">
-      <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg" data-bg-opacity=".25"></div>
+      <div class="overlay-photo-image-bg" data-bg-opacity=".25"></div>
       <div class="container">
         <div class="row footer-cols">
-          <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo"/>
+          <div class="col-12 col-md-8 col-lg-4  footer-col ">
+            <img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo5.png" alt="logo" style="margin-bottom: 0.75rem;"/>
             <div class="footer-col-content-wrapper">        
-              <p class="footer-text-about-us ">
+              <p class="footer-text-about-us " style="margin-top: 0;">
                 Providing the best services and IT solutions requires a combination of technical expertise, customer-focused strategies, and cutting-edge technologies.
                 
               </p>
             </div>
-            <div class="form-area ">
-              <div class="mailchimp-form ">
-                <form class="one-field-form" method="post" action="#0">
-                  <div class="field-group ">
-                    <label class="email-label" for="email-input"> Subscribe to our news letter</label>
-                    <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Email Address" autocomplete="off"/>
-                    <div class="cta-area">
-                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"/>
-                    </div>
-                  </div><span class="email-notice">*we will not share your personal info</span>
-                </form>
-              </div>
-            </div>
           </div>
           <div class="col-6 col-lg-2  footer-col ">
-            <h2 class=" footer-col-title    ">useful links</h2>
+            <h2 class=" footer-col-title    ">internship links</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu ">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Google</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">python-django</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">Dribbble</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">Mern stack</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">linkedIn</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">PHP Laravel</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">wikipedia</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="internship.html">.NET Full Stack</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-6 col-lg-2 footer-col ">
-            <h2 class=" footer-col-title    ">Resources</h2>
+            <h2 class=" footer-col-title    ">Services</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu">
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">support</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-web-development.html">Web Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">dashboard</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-apps-development.html">Apps Development</a>
                 </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">drivers</a>
-                </li>
-                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#0">projects</a>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="service-mern-mean-stack.html">Mern/Mean Stack</a>
                 </li>
               </ul>
             </div>
@@ -252,12 +147,12 @@
             <div class="footer-col-content-wrapper">       
               <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">infinity3tech@gmail.com</a></div>
               <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="info"> 205, Emerald Complex, CG Road, Near Mithakhali, Navrangpura, Ahmedabad Gujarat 380009</span></div>
-              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+20123456789">+91 7600512333, +91 6359301750  </a></div>
+              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+919429259294">+91 94292 59294, +91 84012 30372</a></div>
               <div class="contact-info-card">
                 <div class="social-icons">
                   <div class="sc-wrapper dir-row sc-size-32">
                     <ul class="sc-list">
-                      <li class="sc-item "><a class="sc-link" href="https://wa.me/9429259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
+                      <li class="sc-item "><a class="sc-link" href="https://wa.me/919409259294" target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.youtube.com/@infinity3technology" target="_blank" rel="noopener" title="youtube"><i class="fab fa-youtube sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.instagram.com/infinity3technology/" target="_blank" rel="noopener" title="instagram"><i class="fab fa-instagram sc-icon"></i></a></li>
                       <li class="sc-item "><a class="sc-link" href="https://www.linkedin.com/company/infinity-3-technology-private-limited/share/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in sc-icon"></i></a></li>
@@ -296,6 +191,9 @@
     <!-- Start back-to-top Component-->
     <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
     </div>
+    <a class="whatsapp-floating" href="https://wa.me/919409259294" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
     <!-- End back-to-top Component-->   
         
         <!--     JQuery     -->
@@ -333,12 +231,14 @@
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {
-            // Get URL parameters
+            'use strict';
+            
+            // Get URL parameters for technology and duration
             const urlParams = new URLSearchParams(window.location.search);
             const technology = urlParams.get('technology');
             const duration = urlParams.get('duration');
 
-            // Set technology and duration fields
+            // Set hidden technology and duration fields
             if (technology) {
               document.getElementById('technology').value = technology;
             }
@@ -346,27 +246,177 @@
               document.getElementById('duration').value = duration;
             }
 
-            // Handle degree dropdown change
-            const degreeSelect = document.getElementById('degree');
-            const otherDegreeWrapper = document.getElementById('other-degree-wrapper');
-            const otherDegreeInput = document.getElementById('other-degree');
-
-            degreeSelect.addEventListener('change', function() {
-              if (this.value === 'Others') {
-                otherDegreeWrapper.style.display = 'block';
-                otherDegreeInput.required = true;
-              } else {
-                otherDegreeWrapper.style.display = 'none';
-                otherDegreeInput.required = false;
-                otherDegreeInput.value = '';
+            // Helper function to show error message
+            function showError(input, message) {
+              const errorSpan = input.parentElement.querySelector('.error-msg');
+              if (errorSpan) {
+                errorSpan.textContent = message;
+                errorSpan.style.display = 'block';
+                errorSpan.style.color = '#ff6b6b';
+                errorSpan.style.fontSize = '12px';
+                errorSpan.style.marginTop = '5px';
               }
-            });
+              input.classList.add('invalid');
+            }
 
-            // Handle branch dropdown change
+            // Helper function to clear error message
+            function clearError(input) {
+              const errorSpan = input.parentElement.querySelector('.error-msg');
+              if (errorSpan) {
+                errorSpan.textContent = '';
+                errorSpan.style.display = 'none';
+              }
+              input.classList.remove('invalid');
+            }
+
+            // Get form elements
+            const form = document.getElementById('registration-form');
+            const nameInput = document.getElementById('student-name');
+            const collegeInput = document.getElementById('college-name');
+            const emailInput = document.getElementById('email');
+            const mobileInput = document.getElementById('mobile');
             const branchSelect = document.getElementById('branch');
             const otherBranchWrapper = document.getElementById('other-branch-wrapper');
             const otherBranchInput = document.getElementById('other-branch');
+            const cityInput = document.getElementById('current-city');
 
+            // ==================== FULL NAME VALIDATION ====================
+            nameInput.addEventListener('keypress', function(e) {
+              const char = String.fromCharCode(e.which);
+              if (!/[a-zA-Z\s]/.test(char)) {
+                e.preventDefault();
+                return false;
+              }
+            });
+            
+            nameInput.addEventListener('input', function() {
+              this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+            });
+            
+            nameInput.addEventListener('paste', function(e) {
+              e.preventDefault();
+              const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+              const cleanedText = pastedText.replace(/[^a-zA-Z\s]/g, '');
+              const start = this.selectionStart;
+              this.value = this.value.substring(0, start) + cleanedText + this.value.substring(this.selectionEnd);
+              this.setSelectionRange(start + cleanedText.length, start + cleanedText.length);
+            });
+
+            nameInput.addEventListener('blur', function() {
+              const value = this.value.trim();
+              if (!value) {
+                showError(this, 'Full name is required');
+              } else if (value.length < 2) {
+                showError(this, 'Name must be at least 2 characters');
+              } else if (value.split(' ').filter(word => word.length > 0).length < 2) {
+                showError(this, 'Please enter your full name (first and last name)');
+              } else {
+                clearError(this);
+              }
+            });
+
+            // ==================== COLLEGE NAME VALIDATION ====================
+            collegeInput.addEventListener('blur', function() {
+              const value = this.value.trim();
+              if (!value) {
+                showError(this, 'College name is required');
+              } else if (value.length < 3) {
+                showError(this, 'College name must be at least 3 characters');
+              } else {
+                clearError(this);
+              }
+            });
+
+            // ==================== EMAIL VALIDATION ====================
+            emailInput.addEventListener('keypress', function(e) {
+              const char = String.fromCharCode(e.which);
+              if (!/[a-zA-Z0-9@._-]/.test(char)) {
+                e.preventDefault();
+                return false;
+              }
+            });
+            
+            emailInput.addEventListener('input', function() {
+              this.value = this.value.replace(/[^a-zA-Z0-9@._-]/g, '').toLowerCase();
+            });
+            
+            emailInput.addEventListener('paste', function(e) {
+              e.preventDefault();
+              const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+              const cleanedText = pastedText.replace(/[^a-zA-Z0-9@._-]/g, '').toLowerCase();
+              const start = this.selectionStart;
+              this.value = this.value.substring(0, start) + cleanedText + this.value.substring(this.selectionEnd);
+              this.setSelectionRange(start + cleanedText.length, start + cleanedText.length);
+            });
+
+            emailInput.addEventListener('blur', function() {
+              const value = this.value.trim().toLowerCase();
+              this.value = value;
+              
+              if (!value) {
+                showError(this, 'Email is required');
+              } else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
+                showError(this, 'Please enter a valid email (e.g., name@example.com)');
+              } else {
+                clearError(this);
+              }
+            });
+
+            // ==================== MOBILE NUMBER VALIDATION ====================
+            mobileInput.addEventListener('keypress', function(e) {
+              // Only allow digits 0-9
+              if (e.which < 48 || e.which > 57) {
+                e.preventDefault();
+                return false;
+              }
+              // Block if already 10 digits
+              if (this.value.length >= 10) {
+                e.preventDefault();
+                return false;
+              }
+            });
+            
+            mobileInput.addEventListener('input', function() {
+              // Remove all non-digit characters
+              let cleaned = this.value.replace(/\D/g, '');
+              // Limit to 10 digits
+              if (cleaned.length > 10) {
+                cleaned = cleaned.substring(0, 10);
+              }
+              this.value = cleaned;
+              
+              // Show validation feedback
+              if (cleaned.length > 0 && cleaned.length < 10) {
+                showError(this, `Enter ${10 - cleaned.length} more digit${10 - cleaned.length > 1 ? 's' : ''}`);
+              } else if (cleaned.length === 10 && !/^[6-9]/.test(cleaned)) {
+                showError(this, 'Mobile number must start with 6, 7, 8, or 9');
+              } else if (cleaned.length === 10) {
+                clearError(this);
+              }
+            });
+            
+            mobileInput.addEventListener('paste', function(e) {
+              e.preventDefault();
+              const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+              const numericOnly = pastedText.replace(/\D/g, '').substring(0, 10);
+              this.value = numericOnly;
+              this.dispatchEvent(new Event('input', { bubbles: true }));
+            });
+
+            mobileInput.addEventListener('blur', function() {
+              const value = this.value.trim();
+              if (!value) {
+                showError(this, 'Mobile number is required');
+              } else if (value.length !== 10) {
+                showError(this, 'Mobile number must be exactly 10 digits');
+              } else if (!/^[6-9][0-9]{9}$/.test(value)) {
+                showError(this, 'Please enter a valid Indian mobile number');
+              } else {
+                clearError(this);
+              }
+            });
+
+            // ==================== BRANCH VALIDATION ====================
             branchSelect.addEventListener('change', function() {
               if (this.value === 'Others') {
                 otherBranchWrapper.style.display = 'block';
@@ -375,20 +425,131 @@
                 otherBranchWrapper.style.display = 'none';
                 otherBranchInput.required = false;
                 otherBranchInput.value = '';
+                clearError(otherBranchInput);
+              }
+              clearError(this);
+            });
+
+            branchSelect.addEventListener('blur', function() {
+              if (!this.value) {
+                showError(this, 'Please select a branch');
+              } else {
+                clearError(this);
               }
             });
 
-            // Handle form submission
-            const form = document.getElementById('registration-form');
+            otherBranchInput.addEventListener('blur', function() {
+              if (branchSelect.value === 'Others') {
+                const value = this.value.trim();
+                if (!value) {
+                  showError(this, 'Please specify your branch');
+                } else if (value.length < 2) {
+                  showError(this, 'Branch name must be at least 2 characters');
+                } else {
+                  clearError(this);
+                }
+              }
+            });
+
+            // ==================== CITY VALIDATION ====================
+            cityInput.addEventListener('input', function() {
+              this.value = this.value.replace(/[^a-zA-Z\s-]/g, '');
+            });
+
+            cityInput.addEventListener('blur', function() {
+              const value = this.value.trim();
+              if (value && value.length < 2) {
+                showError(this, 'City name must be at least 2 characters');
+              } else {
+                clearError(this);
+              }
+            });
+
+            // ==================== FORM SUBMISSION ====================
             form.addEventListener('submit', function(e) {
               e.preventDefault();
               
-              // Show success message
-              alert('Thank you for your interest! Our team will contact you soon with enrollment details.');
+              let isValid = true;
+              let firstInvalidField = null;
               
-              // Optional: Reset form or redirect
+              // Validate Full Name
+              const name = nameInput.value.trim();
+              if (!name || name.length < 2) {
+                showError(nameInput, 'Please enter a valid full name');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = nameInput;
+              } else if (name.split(' ').filter(w => w.length > 0).length < 2) {
+                showError(nameInput, 'Please enter first and last name');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = nameInput;
+              }
+              
+              // Validate College
+              const college = collegeInput.value.trim();
+              if (!college || college.length < 3) {
+                showError(collegeInput, 'Please enter a valid college name');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = collegeInput;
+              }
+              
+              // Validate Email
+              const email = emailInput.value.trim();
+              if (!email || !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+                showError(emailInput, 'Please enter a valid email address');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = emailInput;
+              }
+              
+              // Validate Mobile
+              const mobile = mobileInput.value.trim();
+              if (!mobile || !/^[6-9][0-9]{9}$/.test(mobile)) {
+                showError(mobileInput, 'Please enter a valid 10-digit mobile number');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = mobileInput;
+              }
+              
+              // Validate Branch
+              if (!branchSelect.value) {
+                showError(branchSelect, 'Please select a branch');
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = branchSelect;
+              }
+              
+              // Validate Other Branch
+              if (branchSelect.value === 'Others') {
+                const otherBranch = otherBranchInput.value.trim();
+                if (!otherBranch || otherBranch.length < 2) {
+                  showError(otherBranchInput, 'Please specify your branch');
+                  isValid = false;
+                  if (!firstInvalidField) firstInvalidField = otherBranchInput;
+                }
+              }
+              
+              // Focus on first error
+              if (!isValid) {
+                if (firstInvalidField) {
+                  firstInvalidField.focus();
+                  firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return false;
+              }
+              
+              // Success - all validations passed
+              alert('✓ Registration Successful!\n\nThank you for your interest! Our team will contact you soon with enrollment details.');
+              
+              // Optional: Reset or redirect
               // form.reset();
               // window.location.href = 'internship.html';
+              
+              return false;
+            });
+
+            // Clear error on focus
+            const allInputs = form.querySelectorAll('input, select');
+            allInputs.forEach(function(input) {
+              input.addEventListener('focus', function() {
+                clearError(this);
+              });
             });
           });
         </script>
