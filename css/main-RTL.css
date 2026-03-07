@@ -979,6 +979,33 @@ a:hover {
   bottom: 30px;
 }
 
+.whatsapp-floating {
+  position: fixed;
+  right: 30px;
+  bottom: -100px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: var(--clr-white);
+  background-color: #25d366;
+  box-shadow: 0px 3px 15px 0px rgba(var(--clr-dark-blue-rgb), 0.25);
+  z-index: 20;
+  transition: all 0.3s ease-in-out 0s;
+}
+.back-to-top.show ~ .whatsapp-floating,
+.whatsapp-floating.show {
+  bottom: 90px;
+}
+.whatsapp-floating:hover {
+  background-color: #1fb658;
+}
+.whatsapp-floating .bi-whatsapp {
+  font-size: 1.25rem;
+}
+
 .mode-switcher {
   position: relative;
   width: 2.25rem;
@@ -1139,18 +1166,21 @@ body.rounded-btns .read-more {
 .custom-form-area.input-boxed input[type=email]:focus ~ .input-label,
 .custom-form-area.input-boxed input[type=text]:focus ~ .input-label,
 .custom-form-area.input-boxed input[type=password]:focus ~ .input-label,
+.custom-form-area.input-boxed input[type=tel]:focus ~ .input-label,
 .custom-form-area.input-boxed input[type=url]:focus ~ .input-label,
 .custom-form-area.input-boxed input[type=search]:focus ~ .input-label,
 .custom-form-area.input-boxed input[type=number]:focus ~ .input-label,
 .custom-form-area.input-boxed textarea:focus ~ .input-label, .custom-form-area.input-boxed .input-wrapper.has-text .input-label, .custom-form-area.input-under-lined input[type=email]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=text]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=password]:focus ~ .input-label,
+.custom-form-area.input-under-lined input[type=tel]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=url]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=search]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=number]:focus ~ .input-label,
 .custom-form-area.input-under-lined textarea:focus ~ .input-label, .custom-form-area.input-under-lined .input-wrapper.has-text .input-label, .custom-form-area input[type=email]:focus ~ .input-label,
 .custom-form-area input[type=text]:focus ~ .input-label,
 .custom-form-area input[type=password]:focus ~ .input-label,
+.custom-form-area input[type=tel]:focus ~ .input-label,
 .custom-form-area input[type=url]:focus ~ .input-label,
 .custom-form-area input[type=search]:focus ~ .input-label,
 .custom-form-area input[type=number]:focus ~ .input-label,
@@ -1204,6 +1234,7 @@ body.rounded-btns .read-more {
 .custom-form-area input[type=email],
 .custom-form-area input[type=text],
 .custom-form-area input[type=password],
+.custom-form-area input[type=tel],
 .custom-form-area input[type=url],
 .custom-form-area input[type=search],
 .custom-form-area input[type=number],
@@ -1213,8 +1244,9 @@ body.rounded-btns .read-more {
   width: 100%;
   padding: 0.75rem;
   outline: none;
-  border: 1px solid rgba(var(--clr-dark-blue-rgb), 0.25);
-  background: var(--clr-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--clr-white);
   margin-bottom: 1rem;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -1261,6 +1293,7 @@ body.rounded-btns .read-more {
 .custom-form-area.input-under-lined input[type=email],
 .custom-form-area.input-under-lined input[type=text],
 .custom-form-area.input-under-lined input[type=password],
+.custom-form-area.input-under-lined input[type=tel],
 .custom-form-area.input-under-lined input[type=url],
 .custom-form-area.input-under-lined input[type=search],
 .custom-form-area.input-under-lined input[type=number],
@@ -1272,6 +1305,7 @@ body.rounded-btns .read-more {
 .custom-form-area.input-under-lined input[type=email]:focus ~ .b-border,
 .custom-form-area.input-under-lined input[type=text]:focus ~ .b-border,
 .custom-form-area.input-under-lined input[type=password]:focus ~ .b-border,
+.custom-form-area.input-under-lined input[type=tel]:focus ~ .b-border,
 .custom-form-area.input-under-lined input[type=url]:focus ~ .b-border,
 .custom-form-area.input-under-lined input[type=search]:focus ~ .b-border,
 .custom-form-area.input-under-lined input[type=number]:focus ~ .b-border,
@@ -1281,6 +1315,7 @@ body.rounded-btns .read-more {
 .custom-form-area.input-under-lined input[type=email]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=text]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=password]:focus ~ .input-label,
+.custom-form-area.input-under-lined input[type=tel]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=url]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=search]:focus ~ .input-label,
 .custom-form-area.input-under-lined input[type=number]:focus ~ .input-label,
@@ -1296,6 +1331,7 @@ body.rounded-btns .read-more {
 .custom-form-area.input-boxed input[type=email]:focus,
 .custom-form-area.input-boxed input[type=text]:focus,
 .custom-form-area.input-boxed input[type=password]:focus,
+.custom-form-area.input-boxed input[type=tel]:focus,
 .custom-form-area.input-boxed input[type=url]:focus,
 .custom-form-area.input-boxed input[type=search]:focus,
 .custom-form-area.input-boxed input[type=number]:focus,
