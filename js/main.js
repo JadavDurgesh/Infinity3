@@ -309,9 +309,11 @@ $(function () {
     if ($(this).scrollTop() > 50) {
       //show back to top btn
       toTopBtn.addClass("show");
+      $(".whatsapp-floating").addClass("show");
     } else {
       //hide back to top btn
       toTopBtn.removeClass("show");
+      $(".whatsapp-floating").removeClass("show");
     }
 
     // to make sure the counter will start counting while its section apear on the screen
